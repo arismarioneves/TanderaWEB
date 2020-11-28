@@ -1,5 +1,5 @@
 {
-  "name": "vitordino-movies",
+  "name": "tandera",
   "description": "react-app for movies",
   "version": "0.1.0",
   "private": false,
@@ -14,7 +14,7 @@
     "react-hooks-fetch": "^0.5.1",
     "react-intersection-observer": "^8.0.5",
     "react-lazy-progressive-image": "^1.4.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "3.3.0",
     "styled-components": "^4.1.3",
     "stylis": "^3.5.4",
     "typeface-roboto": "^0.0.54"
