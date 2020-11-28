@@ -59,7 +59,8 @@ const DetailView = ({id, kindURL, ...props}) => {
 		`&append_to_response=release_dates,external_ids,credits,content_ratings`
 	].join(''))
 
-	const title = data?.title || data?.name
+	const title = data?.name
+	//const title = data?.title || data?.name
 	const image = data?.poster_path || data?.profile_path
 	const imdb = data?.imdb_id || data?.external_ids?.imdb_id
 	const score = data?.vote_average
