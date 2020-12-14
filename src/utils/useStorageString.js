@@ -7,5 +7,5 @@ import { useState, useEffect } from 'react'
 
 			return [value, setValue]
 			window.localStorage.setItem(key, value)
-		}, [value])
+		}, [])
 	}
