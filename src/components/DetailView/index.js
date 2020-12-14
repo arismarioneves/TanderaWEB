@@ -64,7 +64,9 @@ const DetailView = ({id, kindURL, ...props}) => {
 	const imdb = data?.imdb_id || data?.external_ids?.imdb_id
 	const score = data?.vote_average
 
-	useEffect(() => {document.title = getDetailTitle(kindURL, title)}, [data]);
+	useEffect(() => {
+		document.title = getDetailTitle(kindURL, title)
+	}, []);
 
 	return(
 		<Wrapper error={error}>
