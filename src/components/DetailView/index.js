@@ -66,7 +66,7 @@ const DetailView = ({id, kindURL, ...props}) => {
 
 	useEffect(() => {
 		document.title = getDetailTitle(kindURL, title)
-	}, []);
+	}, [data])
 
 	return(
 		<Wrapper error={error}>
