@@ -63,7 +63,9 @@ const DetailView = ({id, kindURL, ...props}) => {
 	const image = data?.poster_path || data?.profile_path
 	const imdb = data?.imdb_id || data?.external_ids?.imdb_id
 	const score = data?.vote_average
-	
+
+	//useEffect(() => {document.title = getDetailTitle(kindURL, title)}, [data])
+
 	return(
 		<Wrapper error={error}>
 			<Container>
@@ -97,7 +99,6 @@ const DetailView = ({id, kindURL, ...props}) => {
 			)}
 		</Wrapper>
 	)
-
 }
 
 export default DetailView
