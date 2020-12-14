@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
 
-useEffect(() => {
 	export const useStorageString = (key = 'key', initialValue = '') => {
-		const initial = () => window.localStorage.getItem(key) || initialValue
-		const [value, setValue] = useState(initial)
+		useEffect(() => {
+			const initial = () => window.localStorage.getItem(key) || initialValue
+			const [value, setValue] = useState(initial)
 
-		return [value, setValue]
+			return [value, setValue]
+			window.localStorage.setItem(key, value)
+		}, [value])
 	}
-	
-	window.localStorage.setItem(key, value)
-}, [value])
