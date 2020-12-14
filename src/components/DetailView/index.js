@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+//import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useFetch } from 'react-hooks-fetch'
 import { Row, Cell } from 'griding'
@@ -49,7 +49,7 @@ const BackLink = styled.button`
 	}
 `
 
-const getDetailTitle = (kindURL, title) => `${getTitleFromURL(kindURL)} ${title ? ` ⠿ ${title}` : ''}`
+//const getDetailTitle = (kindURL, title) => `${getTitleFromURL(kindURL)} ${title ? ` ⠿ ${title}` : ''}`
 
 const DetailView = ({id, kindURL, ...props}) => {
 	const kind = getKindByURL(kindURL)
